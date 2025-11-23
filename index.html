@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Responsive Portfolio — Lab 3</title>
+  <meta name="description" content="Personal portfolio — responsive, Flexbox, Grid, animations" />
+  <!-- Example Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero">Ganesh Pal</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- mobile menu toggle (pure css minimal) -->
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero container">
+      <div class="hero-content">
+        <h1>Hello — I'm <span class="name">Ganesh</span></h1>
+        <p class="lead">A <span class="animated-role">Full Stack Developer</span> building responsive and accessible web experiences.</p>
+        <p class="hero-actions">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">contact me</a>
+        </p>
+      </div>
+
+      <figure class="hero-image" aria-hidden="true">
+        <!-- profile image -->
+        <img src="https://i.ibb.co/20FTxPZf/cropped-circle-image-1.png" alt="Profile picture of Ganesh">
+      </figure>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container card">
+      <h2>About</h2>
+      <div class="about-grid">
+        <p>
+          I design and code simple, beautiful, and accessible websites. I enjoy solving problems with modern CSS (Flexbox, Grid),
+          animations, and clean semantic HTML. This assignment demonstrates responsive layout, relative units, transitions, and keyframe animations.
+        </p>
+        <ul class="quick-info">
+          <li><strong>Location:</strong> India</li>
+          <li><strong>Email:</strong> <a href="mailto:ganeshpal1516@gmail.com">ganeshpal1516@gmail.com</a></li>
+          <li><strong>University:</strong>K.R. Mangalam University</li>
+          <li><strong>Role:</strong> Full Stack Developer</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5 <span class="skill-level">Expert</span></div>
+        <div class="skill-card">CSS3 (Flexbox/Grid) <span class="skill-level">Advanced</span></div>
+        <div class="skill-card">Javascript <span class="skill-level">Learning</span></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Project card template -->
+        <article class="project-card">
+          <img src="/img 1.jpg" alt="Screenshot of project 1">
+          <div class="project-body">
+            <h3>Portfolio Website</h3>
+            <p>Responsive single-page portfolio built with semantic HTML and modern CSS (Flexbox & Grid).</p>
+            <p class="project-tags">HTML • CSS • Responsive</p>
+            <a class="project-link" href="/img 1.jpg" aria-label="Open project 1">View</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="/img 2.jpg" alt="Screenshot of project 2">
+          <div class="project-body">
+            <h3>Potfolio with basic css</h3>
+            <p>A personal webpage portfolio created by using html and basic css</p>
+            <p class="project-tags">CSS Grid </p>
+            <a class="project-link" href="/img 2.jpg">View</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="/image 3.jpg" alt="Screenshot of project 3">
+          <div class="project-body">
+            <h3>Portfolio advance CSS</h3>
+            <p>Small interactive components demonstrating keyframe and transition-based animations.</p>
+            <p class="project-tags">Animations and advance CSS</p>
+            <a class="project-link" href="/image 3.jpg">View</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container card">
+      <h2>Contact</h2>
+      <form class="contact-form" action="/feedback.html" method="get" novalidate>
+        <div class="form-grid">
+          <label>
+            <span class="label-text">Name</span>
+            <input type="text" name="name" required placeholder="Your name">
+          </label>
+          <label>
+            <span class="label-text">Email</span>
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+          <label class="full">
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
+          </label>
+        </div>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <time datetime="2025">2025</time> Ganesh Pal — Built with ❤ • <a href="#hero">Go to Top</a></p>
+      <nav class="social">
+        <a href="https://github.com/ganeshpal07" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/ganesh-pal-94a32a382" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:ganeshpal1516@gmail.com" aria-label="G-mail">G-mail</a>
+      </nav>
+    </div>
+  </footer>
+
+ 
+</body>
+</html>
